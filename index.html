@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Calculator</title>
+<style>
+   .c1{
+      background:whitesmoke;
+   }
+input[type="button1"]{
+   height=20px;
+width=50px;
+text-align: center;
+padding:25px 0px;
+background-color: green;
+color:white;
+font-size:8px;
+font-weight:bold;
+border-radius:0px;}
+
+input[type="button2"]{
+   height=20px;
+width=50px;
+text-align: center;
+padding:25px 0px;
+background-color: #010508;
+color:white;
+font-size:8px;
+font-weight:bold;
+border-radius:0px;}
+
+input[type="button3"]{
+height=20px;
+width=50px;
+text-align: center;
+padding:25px 0px;
+background-color: grey;
+color:white;
+font-size:8px;
+font-weight:bold;
+border-radius:0px;}
+
+input[type="text"]{
+width=100%;
+padding:25px 110px;
+background-color:#f2f8fc;
+font-size:10px;
+font-weight:bold;
+border-radius:5px;
+border:2px solid black;}
+
+</style>
+</head>
+<body>
+
+         <table class="c1">
+            <tr>
+               <td colspan="3">
+                  <input type="text" id="display" disabled>
+                  <td class="c4"><input type="button1" id="clear"  value="c" onclick="display.value = ''"></td>>
+               </td>
+            </tr>
+            <tr>
+               <td class="c2"disabled><input type="button2"  value="1" onclick="display.value += '1'"></td>
+               <td class="c2"disabled><input type="button2"  value="2" onclick="display.value += '2'"></td>
+               <td class="c2"><input type="button2"  value="3" onclick="display.value += '3'"></td>
+               <td class="c3"><input type="button3" class="operator"  value="+" onclick="display.value += '+'"></td>
+            </tr>
+            <tr>
+               <td class="c2"><input type="button2"  value="4" onclick="display.value += '4'"></td>
+               <td class="c2"><input type="button2"  value="5" onclick="display.value += '5'"></td>
+               <td class="c2"><input type="button2" value="6" onclick="display.value += '6'"></td>
+               <td class="c3"><input type="button3" class="operator" value="-" onclick="display.value += '-'"></td>
+            </tr>
+            <tr>
+               <td class="c2"><input type="button2" value="7" onclick="display.value += '7'"></td>
+               <td class="c2"><input type="button2" value="8" onclick="display.value += '8'"></td>
+               <td class="c2"><input type="button2" value="9" onclick="display.value += '9'"></td>
+               <td  class="c3"><input type="button3" class="operator" value="x" onclick="display.value += '*'"></td>
+            </tr>
+            <tr>
+               <td class="c2"><input type="button2" value="." onclick="display.value += '.'"></td>
+               <td class="c2"><input type="button2" value="0" onclick="display.value += '0'"></td>
+               <td class="c2"><input type="button2" value="=" onclick="display.value = eval(display.value)"></td>
+               <td  class="c3"><input type="button3"  value="/" onclick="display.value += '/'"></td>
+            </tr>
+            </table>
+
+</body>
+</html>
